@@ -1,4 +1,5 @@
 # copyWordPress
+Use nuxt ssr
 
 > My bee&#39;s knees Nuxt.js project
 
