@@ -109,6 +109,11 @@ export default {
 	border-radius: 2px;
 	cursor: pointer;
 }
+.home_center{
+	padding: 20px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
 .home_center_title{
 	text-align: center;
 	font-size: 30px;
@@ -120,9 +125,14 @@ export default {
 	display: flex;
 	justify-content: space-between;
 }
+.home_center_content_item{
+	width: 22vw;
+	max-width: 242px;
+}
 .home_center_content_item_img{
-	width: 242px;
-	height: 242px;
+	width: 100%;
+	height: 22vw;
+	max-height: 242px;
 	margin-bottom: 20px;
 }
 .home_center_content_item_img img{
@@ -138,5 +148,21 @@ export default {
 .home_center_content_item_price{
 	font-weight: 700;
 	font-size: 14px;
+}
+@media screen and (max-width:768px){
+	.home_center_content{
+		flex-wrap: wrap;
+	}
+	.home_center_content_item{
+		width: 42vw;
+		margin: 20px 0;
+		max-width: unset;
+		/* height: 34vw; */
+	}
+	.home_center_content_item_img{
+		height: 42vw;
+		max-height: unset;
+	}
+	
 }
 </style>
